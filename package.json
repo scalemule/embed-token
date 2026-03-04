@@ -1,0 +1,49 @@
+{
+  "name": "@scalemule/embed-token",
+  "version": "0.0.1",
+  "description": "Server-side signing SDK for Gallop Video Player embed tokens",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "test": "npm run build && node --test"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "scalemule",
+    "gallop",
+    "embed",
+    "token",
+    "jwt",
+    "video"
+  ],
+  "author": "ScaleMule Inc. <support@scalemule.com>",
+  "license": "MIT",
+  "homepage": "https://scalemule.com/gallop",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scalemule/embed-token.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scalemule/embed-token/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
